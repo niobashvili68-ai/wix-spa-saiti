@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wix-nav-container">
+        <div class="logo-wrapper">
+            <div class="logo-icon"></div>
+            <span class="logo-text">SERENITY<br><small>HEALTH SPA</small></span>
+        </div>
+        
+        <nav class="nav-links-wrapper">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="treatments.html" class="active-nav">Treatments</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-utility-icons">
+            <div class="login-action"><span class="user-avatar-icon"></span> Log In</div>
+            <div class="cart-action-btn">🛍️ <span class="cart-counter">0</span></div>
+        </div>
+        <button class="hamburger-menu" id="mobileBurger">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <section class="subpage-title-banner text-center border-bottom">
+        <h1 class="section-serif-title uppercase-title large-header-text">TREATMENTS</h1>
+        <p class="wix-placeholder-p centered-max-width">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p>
+        <p class="wix-placeholder-p centered-max-width text-muted">This is a great space to write a long text about your company and your services. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors.</p>
+    </section>
+
+    <section class="filter-navigation-bar">
+        <div class="filters-inner-alignment">
+            <button class="filter-tab active-filter" onclick="filterServices('all')">All Services</button>
+            <button class="filter-tab" onclick="filterServices('massage')">Massages</button>
+            <button class="filter-tab" onclick="filterServices('scrub')">Scrubs</button>
+            <button class="filter-tab" onclick="filterServices('body')">Body Treatments</button>
+        </div>
+    </section>
+
+    <section class="treatment-catalog-list-wrapper">
+        
+        <div class="treatment-item-row" data-category="massage">
+            <div class="treatment-media-box">
+                <img src=https://static.wixstatic.com/media/c837a6_f84f994582954c058098a0865205f83e~mv2.jpeg/v1/fill/w_768,h_768,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_f84f994582954c058098a0865205f83e~mv2.jpeg alt="Deep tissue massage layout">
+            </div>
+            <div class="treatment-details-box">
+                <h2 class="treatment-title-serif">Deep Tissue Massage</h2>
+                <p class="treatment-desc-sub">Use this area to describe one of your services.</p>
+                <div class="treatment-meta-metrics">
+                    <span class="duration-metric">1 hr 30 min</span>
+                    <span class="price-metric">$325</span>
+                </div>
+                <button class="wix-rect-outline-btn" onclick="openBookingModal('Deep Tissue Massage')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="treatment-item-row" data-category="massage">
+            <div class="treatment-media-box">
+                <img src=https://static.wixstatic.com/media/c837a6_80445f4f50fd4dfe8f50f7e77d5b668a~mv2.jpeg/v1/fill/w_768,h_768,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_80445f4f50fd4dfe8f50f7e77d5b668a~mv2.jpeg alt="Shiatsu therapy step">
+            </div>
+            <div class="treatment-details-box">
+                <h2 class="treatment-title-serif">Shiatsu Massage</h2>
+                <p class="treatment-desc-sub">Use this area to describe one of your services.</p>
+                <div class="treatment-meta-metrics">
+                    <span class="duration-metric">1 hr 30 min</span>
+                    <span class="price-metric">$325</span>
+                </div>
+                <button class="wix-rect-outline-btn" onclick="openBookingModal('Shiatsu Massage')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="treatment-item-row" data-category="body">
+            <div class="treatment-media-box">
+                <img src=https://static.wixstatic.com/media/c837a6_48bb3d8017a046749a1d922056a1285d~mv2.jpeg/v1/fill/w_768,h_768,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_48bb3d8017a046749a1d922056a1285d~mv2.jpeg alt="Full Body skincare Treatment step">
+            </div>
+            <div class="treatment-details-box">
+                <h2 class="treatment-title-serif">Full Body Treatment</h2>
+                <p class="treatment-desc-sub">Use this area to describe one of your services.</p>
+                <div class="treatment-meta-metrics">
+                    <span class="duration-metric">1 hr</span>
+                    <span class="price-metric">$225</span>
+                </div>
+                <button class="wix-rect-outline-btn" onclick="openBookingModal('Full Body Treatment')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="treatment-item-row" data-category="scrub">
+            <div class="treatment-media-box">
+                <img src=https://static.wixstatic.com/media/c837a6_5938a896fef8489c89d83b1d8d25a824~mv2.jpeg/v1/fill/w_768,h_768,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_5938a896fef8489c89d83b1d8d25a824~mv2.jpeg alt="Detoxifying Mud Mask application step">
+            </div>
+            <div class="treatment-details-box">
+                <h2 class="treatment-title-serif">Detoxifying Body Mask</h2>
+                <p class="treatment-desc-sub">Use this area to describe one of your services.</p>
+                <div class="treatment-meta-metrics">
+                    <span class="duration-metric">45 min</span>
+                    <span class="price-metric">$180</span>
+                </div>
+                <button class="wix-rect-outline-btn" onclick="openBookingModal('Detoxifying Body Mask')">Book Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="wix-modal-overlay" id="bookingModal">
+        <div class="modal-box-card">
+            <span class="close-modal-x" onclick="closeBookingModal()">&times;</span>
+            <h3 class="section-serif-title" id="modalServiceTitle">Book Treatment</h3>
+            <form id="modalFormSubmit" class="modal-form-layout">
+                <input type="text" placeholder="Your Name" required class="wix-clean-input">
+                <input type="email" placeholder="Your Email Address" required class="wix-clean-input">
+                <input type="date" required class="wix-clean-input">
+                <button type="submit" class="wix-rect-outline-btn full-width-btn">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="wix-global-footer">
+        <div class="footer-columns-grid">
+            <div class="footer-col-brand"><h2>SERENITY<br>HEALTH SPA</h2></div>
+            <div class="footer-col-nav">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Yelp</a></li>
+                    <li><a href="#">TripAdvisor</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-contact">
+                <h3>Reservations</h3>
+                <p>Mail: info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="legal-credits"><p>© 2035 by Serenity Health Spa. Proudly powered and secured by Wix.</p></div>
+            <div class="legal-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

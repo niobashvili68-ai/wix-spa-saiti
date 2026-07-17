@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wix-nav-container">
+        <div class="logo-wrapper">
+            <div class="logo-icon"></div>
+            <span class="logo-text">SERENITY<br><small>HEALTH SPA</small></span>
+        </div>
+        
+        <nav class="nav-links-wrapper">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="shop.html" class="active-nav">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-utility-icons">
+            <div class="login-action"><span class="user-avatar-icon"></span> Log In</div>
+            <div class="cart-action-btn">🛍️ <span class="cart-counter" id="globalCartCounter">0</span></div>
+        </div>
+        <button class="hamburger-menu" id="mobileBurger">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <section class="shop-title-header-strip text-center">
+        <h1 class="section-serif-title large-header-text uppercase-title">All Products</h1>
+        <p class="category-description-text centered-max-width">This is your category description. It's a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</p>
+    </section>
+
+    <section class="shop-products-grid-container">
+        
+        <div class="product-item-card">
+            <div class="product-thumbnail-frame">
+                <img src=https://static.wixstatic.com/media/c837a6_0fb823ffe5f648bf94b0a0c705d2cdc2~mv2.jpg/v1/fit/w_1920,h_1920,q_90/file.jpg/v1/fill/w_415,h_415,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_0fb823ffe5f648bf94b0a0c705d2cdc2~mv2_jpg_v1_fit_w_1920%2Ch_1920%2Cq_90_file.jpg alt="Body Cream container">
+            </div>
+            <div class="product-metadata-block">
+                <h3 class="product-title-text">Body Cream</h3>
+                <span class="product-price-label">$35.00</span>
+                <button class="wix-rect-outline-btn full-width-btn margin-top-small" onclick="incrementCartCounter()">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-item-card">
+            <div class="product-thumbnail-frame">
+                <img src=https://static.wixstatic.com/media/c837a6_21b362edaaa74323963e900c2388cfab~mv2.jpg/v1/fit/w_1920,h_1920,q_90/file.jpg/v1/fill/w_415,h_415,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_21b362edaaa74323963e900c2388cfab~mv2_jpg_v1_fit_w_1920%2Ch_1920%2Cq_90_file.jpg alt="Massage Oil bottle dropper">
+            </div>
+            <div class="product-metadata-block">
+                <h3 class="product-title-text">Massage Oil</h3>
+                <span class="product-price-label">$25.00</span>
+                <button class="wix-rect-outline-btn full-width-btn margin-top-small" onclick="incrementCartCounter()">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-item-card relative-position">
+            <div class="best-seller-tag-badge">Best Seller</div>
+            <div class="product-thumbnail-frame">
+                <img src=https://static.wixstatic.com/media/c837a6_e43338cd2747432b91aefe20a00ec56e~mv2.jpg/v1/fit/w_1920,h_1920,q_90/file.jpg/v1/fill/w_415,h_415,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e43338cd2747432b91aefe20a00ec56e~mv2_jpg_v1_fit_w_1920%2Ch_1920%2Cq_90_file.jpg alt="Hand Cream compound tube asset">
+            </div>
+            <div class="product-metadata-block">
+                <h3 class="product-title-text">Hand Cream</h3>
+                <span class="product-price-label">$15.00</span>
+                <button class="wix-rect-outline-btn full-width-btn margin-top-small" onclick="incrementCartCounter()">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-item-card">
+            <div class="product-thumbnail-frame">
+                <img src=https://static.wixstatic.com/media/c837a6_b7e6cc16335e4b8ca4872575cb6cc67f~mv2.jpg/v1/fit/w_1920,h_1920,q_90/file.jpg/v1/fill/w_415,h_415,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_b7e6cc16335e4b8ca4872575cb6cc67f~mv2_jpg_v1_fit_w_1920%2Ch_1920%2Cq_90_file.jpg alt="Scented Candle dark modern jar">
+            </div>
+            <div class="product-metadata-block">
+                <h3 class="product-title-text">Scented Candle</h3>
+                <span class="product-price-label">$15.00</span>
+                <button class="wix-rect-outline-btn full-width-btn margin-top-small" onclick="incrementCartCounter()">Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="wix-global-footer">
+        <div class="footer-columns-grid">
+            <div class="footer-col-brand"><h2>SERENITY<br>HEALTH SPA</h2></div>
+            <div class="footer-col-nav">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Yelp</a></li>
+                    <li><a href="#">TripAdvisor</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-contact">
+                <h3>Reservations</h3>
+                <p>Mail: info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="legal-credits"><p>© 2035 by Serenity Health Spa. Proudly powered and secured by Wix.</p></div>
+            <div class="legal-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
